@@ -28,7 +28,7 @@
   }
   
   .container {
-    max-width: 900px;
+    max-width:90%;
    margin-top: 10rem;
     margin: 35px auto;
     background: white;
@@ -118,12 +118,14 @@
     display: block;
     margin-bottom: 8px;
     color: #333;
+    margin-left: 20rem;
     font-weight: 600;
   }
   
   input[type="text"],
   input[type="email"] {
-    width: 100%;
+    width: 50%;
+    margin-left: 20rem;
     padding: 12px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
