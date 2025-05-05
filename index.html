@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Profile Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Victoria DUFATANYE</h1>
+  </header>
+
+  <div class="container">
+    <img src="p.png" alt="Profile Image" class="profile-img" />
+    
+    <h2>About Me</h2>
+    <p class="bio">Hi! I'm victoria DUFATANYE, a passionate and dedicated software developer with a strong foundation in both frontend and backend development.I enjoy solving real-world problems through code, and I’m especially interested in creating impactful digital solutions that improve communities and drive positive change.</p>
+
+    <h2>My Hobbies</h2>
+    <ul class="hobbies">
+      <li>Reading</li>
+      <li>Coding</li>
+      <li>Traveling</li>
+    </ul>
+
+    <button class="greet-button" onclick="displayGreeting()">Click to Greet</button>
+
+    <h2>Contact Me</h2>
+    <form onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" />
+
+      <button type="submit" class="greet-button">Submit</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>© 2025 Victoria. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function displayGreeting() {
+      alert("Hello, victoria DUFATANYE!");
+    }
+
+    function validateForm() {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+
+      if (!name || !email) {
+        alert("Please fill out both name and email.");
+        return false;
+      }
+
+      alert("Form submitted successfully!");
+      return true;
+    }
+  </script>
+</body>
+</html>
